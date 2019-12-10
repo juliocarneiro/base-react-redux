@@ -20,7 +20,7 @@ class Header extends Component {
           <div className="col-md-3">
             <div className="header-logo">
               <Link to="/">
-                <span className="header-logo-project">Logo</span>
+                <span className="">Logo</span>
               </Link>
             </div>
           </div>

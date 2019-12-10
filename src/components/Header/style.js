@@ -25,39 +25,8 @@ const HeaderStyled = styled.div`
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    .header-logo-project {
-      font-size: 15px;
-      letter-spacing: 1px;
-      color: #fff;
-      text-transform: uppercase;
-      border-left: 1px solid #fff;
-      padding-left: 20px;
-      margin-left: 20px;
-    }
   }
-  @media screen and (max-width: 865px) and (min-width: 768px) {
-    .row .col-md-3 .header-logo {
-      img {
-        max-width: 70px !important;
-      }
-    }
-  }
-  @media screen and (max-width: 1085px) and (min-width: 865px) {
-    .row .col-md-3 .header-logo {
-      img {
-        max-width: 95px !important;
-      }
-    }
-  }
-  @media screen and (max-width: 1340px) {
-    .row .col-md-3 .header-logo {
-      img {
-        max-width: 150px;
-      }
-      .header-logo-project {
-        font-size: 12px;
-      }
-    }
+  @media screen and (max-width: 768px) {
   }
 `;
 

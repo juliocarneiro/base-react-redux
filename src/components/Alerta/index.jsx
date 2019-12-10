@@ -14,7 +14,6 @@ class Alerta extends Component {
       open: { opacity: 1, y: 0, transition: 'all .2s ease' },
       hidden: { opacity: 0, y: -2000, transition: 'all .2s ease' },
     };
-    // console.log('this.props.alerta.route', this.props.alerta);
     return (
       <AlertaStyled key="alerta">
         <motion.div

@@ -8,21 +8,7 @@ class Aside extends Component {
   render() {
     return (
       <AsideStyled key="aside">
-        <p>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          lol
-        </p>
+        <p>teste</p>
       </AsideStyled>
     );
   }

@@ -59,11 +59,6 @@ class Login extends Component {
                     onChange={event => this.handleInputChange(this, event)}
                     value={password}
                   />
-                  {this.props.loginError.error ? (
-                    <div className="mt-0 text-danger">
-                      Usuário ou senha inválidos.
-                    </div>
-                  ) : null}
                 </div>
 
                 <button type="submit">Login</button>
@@ -78,7 +73,6 @@ class Login extends Component {
 
 const mapStateToProps = state => ({
   loginData: state.login.loginData,
-  loginError: state.login.loginError,
   userEmail: state.login.userEmail,
   token: LoginSelectors.getToken(state),
 });
