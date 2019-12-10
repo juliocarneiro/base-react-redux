@@ -1,0 +1,17 @@
+body {
+  font: 15px Gotham Book;
+  background: #131c34;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  background: #787d19;
+  height: 5px;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #cad22a;
+}

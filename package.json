@@ -1,0 +1,92 @@
+{
+  "name": "allinvestx-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "btoa": "^1.2.1",
+    "connected-react-router": "^6.6.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-jest": "^23.1.1",
+    "flow": "^0.2.3",
+    "framer-motion": "^1.16.18",
+    "isomorphic-fetch": "^2.2.1",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-drag-drawer": "^3.3.3",
+    "react-redux": "^7.1.3",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.2.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^4.4.1"
+  },
+  "scripts": {
+    "start": "REACT_APP_ENV=dev react-scripts start",
+    "start:win": "set REACT_APP_ENV=dev && react-scripts start",
+    "start:win:homolog": "set REACT_APP_ENV=homolog && react-scripts start",
+    "start:homolog": "REACT_APP_ENV=homolog react-scripts start",
+    "start:local": "REACT_APP_ENV=local react-scripts start",
+    "start:win:local": "set REACT_APP_ENV=local && react-scripts start",
+    "start:win:prod": "set REACT_APP_ENV=prod && react-scripts start",
+    "build:dev": "REACT_APP_ENV=dev react-scripts build",
+    "build:homolog": "REACT_APP_ENV=homolog react-scripts build",
+    "build:prod": "REACT_APP_ENV=prod react-scripts build",
+    "build:win:dev": "set REACT_APP_ENV=dev && react-scripts build",
+    "build:win:homolog": "set REACT_APP_ENV=homolog && react-scripts build",
+    "build:win:prod": "set REACT_APP_ENV=prod && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy:homolog": "npm run build:homolog",
+    "deploy:prod": "npm run build:prod",
+    "deploy:win:homolog": "npm run build:win:homolog",
+    "deploy:win:prod": "npm run build:win:prod",
+    "precommit": "lint-staged"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "eslintConfig": {
+      "globals": {
+        "window": true,
+        "document": true
+      }
+    }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.2.1",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write --single-quote --no-semi",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "standard": {
+    "globals": {
+      "window": true,
+      "browser": true,
+      "localStorage": true
+    }
+  }
+}

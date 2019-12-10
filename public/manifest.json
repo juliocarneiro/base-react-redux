@@ -1,0 +1,20 @@
+{
+  "short_name": "porto-riscos-financeiros",
+  "name": "Porto Seguro Riscos Financeiros",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#2196F3",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "favicon.ico",
+      "type": "image/png",
+      "sizes": "96x96"
+    }
+  ],
+  "start_url": "index.html"
+}
